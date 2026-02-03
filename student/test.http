@@ -1,0 +1,44 @@
+### 학생 생성 1
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "김부트",
+  "age": 29
+}
+
+### 학생 생성 2
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "최캠프",
+  "age": 28
+}
+
+### 전체 학생 조회
+GET http://localhost:8080/students
+
+### 김부트 → 김두리로 이름 수정
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "김두리",
+  "age": 29
+}
+
+### 전체 학생 조회
+GET http://localhost:8080/students
+
+### 최캠프 삭제
+DELETE http://localhost:8080/students/2
+
+### 전체 학생 조회
+GET http://localhost:8080/students
+
+
+
+
+
+
